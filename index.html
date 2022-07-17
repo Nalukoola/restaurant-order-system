@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=100% initial-scale=1.0 vh-100">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Allan Restaurant</title>
+</head>
+<body>
+    <h1>Allan Online Restaurant</h1>
+    <form>
+        <input type="text" placeholder="Enter Name"/>
+        <br><br>
+        <button>OK</button>
+    
+    <br>
+    <div>
+        <label>PLACE ORDER:</label>
+        <select name="customerOption" id="customerOption" onchange= junta(this.value)>
+            <option value="Breakfast.html">BREAKFAST</option>
+            <option value="Lunch.html">LUNCH</option>
+            <option value="Dinner.html">DINNER</option>
+        </select>
+        <script>
+            function junta(src){
+                window.location = src;
+            }
+        </script>
+    
+    <button>CLOSE APP</button>
+    </div>
+    </form>
+</body>
+</html>

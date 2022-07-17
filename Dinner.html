@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=100% initial-scale=1.0 vh-100">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Allan Restaurant</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function Form(){
+            var selectvalue = $('input[name=food]:checked','#Form').val();
+            if(selectvalue=="SIMPLE"){
+                window.open('Invoice.js','_self');
+                return true;
+            }
+            else 
+            return false;
+        }
+    </script>
+    <h4>DINNER</h4>
+    <form id="Form">
+        <p>Please choose what you would like to be served with!</p>
+        <input type="radio" name="food" value="SIMPLE" onclick="Form()">
+        <label for="simple">Simple for USHS 7500</label><br>
+        <input type="radio" name="food" value="BUFFET" onclick="Form()">
+        <label for="noSnack">Buffet for USHS 15000</label>
+    </form>
+</body>
+</html>
